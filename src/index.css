@@ -220,3 +220,70 @@ footer{
   color:white;
   transform:scale(1.05);
 }
+.hero-name{
+  font-size:56px;
+  font-weight:700;
+
+  background: linear-gradient(
+    90deg,
+    #6366f1,
+    #8b5cf6,
+    #06b6d4
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradientMove 6s ease infinite;
+}
+
+@keyframes gradientMove{
+  0%{ background-position:0% }
+  50%{ background-position:100% }
+  100%{ background-position:0% }
+}
+.hero-buttons button{
+  padding:12px 22px;
+  border-radius:8px;
+  border:none;
+  background:#6366f1;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.hero-buttons button:hover{
+  transform:translateY(-4px);
+  box-shadow:0 10px 30px rgba(99,102,241,0.5);
+}
+.nav-links a{
+  position:relative;
+}
+
+.nav-links a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-4px;
+  width:0;
+  height:2px;
+  background:#6366f1;
+  transition:0.3s;
+}
+
+.nav-links a:hover::after{
+  width:100%;
+}
+.project-card{
+  background:#111827;
+  border-radius:12px;
+  padding:25px;
+  border:1px solid #1f2937;
+  transition:all 0.3s ease;
+}
+
+.project-card:hover{
+  transform:translateY(-8px);
+  border-color:#6366f1;
+  box-shadow:0 15px 35px rgba(0,0,0,0.4);
+}

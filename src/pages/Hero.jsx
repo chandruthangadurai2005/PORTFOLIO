@@ -2,7 +2,7 @@ function Hero() {
   return (
     <section style={styles.hero}>
 
-      <h1>Chandru T</h1>
+      <h1 className="hero-name">Chandru T</h1>
 
       <h3> Aspiring Software Engineer | Java Backend | Machine Learning</h3>
 
